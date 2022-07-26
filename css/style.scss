@@ -1,0 +1,997 @@
+/*---------------------variable-----------------*/
+$Header-color: #ffb400;
+$Theam-color: #d9d9d9;
+$theam-white: #fff;
+$black: #000;
+$white: #fff;
+$Background-color: #844D06;
+$Primary-text-color: #6F3D01;
+$Secondary-text-color: #fff;
+$Primary-text-size: 40px;
+$Secondary-text-size: 16px;
+$heading-font: 'Handlee';
+$Primary-font: 'Taviraj';
+$Secondary-font: 'Noto Sans';
+
+/*--------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans';
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-outline {
+    padding: 10px 40px;
+    margin: 10px 0;
+    background-color: $Header-color;
+    color: $Secondary-text-color;
+
+    &:hover {
+        background-color: $Theam-color;
+    }
+}
+
+body {
+    background-color: $Theam-color;
+}
+
+
+
+//-----header-----
+.navbar {
+    background-color: $Header-color;
+
+    .header-logo {
+        max-width: 20%;
+        flex: 0 0 30%;
+
+        img {
+            margin-bottom: -50px;
+            width: 55%;
+        }
+    }
+
+    .nav-btns {
+        button a {
+            transition: 0.5s;
+            &:hover {
+                color: #7b3f2c !important;
+            }
+        }
+    }
+    .menu-list{
+        li a{
+            transition: 0.5s;
+            &:hover{
+                color: #7b3f2c !important;
+
+            }
+        }
+    }
+}
+
+//------ home page banner------------
+.banner {
+    .carousel-inner {
+        padding-top: 65px;
+        background-image: url(../images/background-img.jpg);
+        background-size: cover;
+        background-position: 50% 90%;
+
+        .carousel-item {
+            align-items: center;
+
+            .bnr-1 {
+                padding-top: 20px !important;
+                img {
+                    width: 70%;
+                }
+
+                p {
+                    font-family: $heading-font  !important;
+                    font-size: 60px;
+                    color: $black;
+                }
+            }
+
+        }
+
+
+        .bnr-2,
+        .bnr-3 {
+            padding: 74px 0;
+
+            img {
+                width: 70%;
+            }
+
+            h2 {
+                margin-top: 20px;
+                font-family: $heading-font  !important;
+                font-size: 80px;
+                color: $black;
+            }
+
+            p {
+                color: $black;
+                font-size: $Secondary-text-size;
+                margin-top: 40px;
+            }
+        }
+
+        .bnr-3 {
+            h2 {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 50px !important;
+}
+
+.arrow {
+    background-color: white !important;
+}
+
+
+
+//------- ------benefits------------
+.benefits {
+    padding: 80px 0px;
+    // background-color: $theam-white;
+    // background-image: url("../images/1920x980-4.jpg");
+    background-size: cover;
+
+    h2 {
+        font-size: $Primary-text-size ;
+    }
+
+    .card {
+        transition: 0.5s;
+
+        &:hover {
+            background-color: #dd9d55;
+            color: $Secondary-text-color;
+        }
+    }
+}
+
+//---------- about us-----------
+.about {
+    padding-bottom: 80px;
+    // position: relative;
+    // overflow: hidden;
+    background-image: url("../images/logo-bg.png");
+    background-size: cover;
+
+    .penut-text {
+        p {
+            font-size: 250px;
+            color: $Secondary-text-color;
+            transform: rotate(-90deg);
+            position: absolute;
+            bottom: 45%;
+            left: -29%;
+        }
+
+        .butter-text {
+            bottom: 24%;
+            left: 62%;
+            scrollbar-gutter: 0;
+            margin: 0;
+            padding: 0;
+            font-size: 300px;
+        }
+    }
+
+    h2 {
+        font-size: $Primary-text-size ;
+    }
+
+    h3 {
+        font-family: $Primary-font;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: $Secondary-font;
+        line-height: 35px;
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        box-shadow: -1px 1px 14px 8px #888888;
+
+        .card-img-top {
+            padding: 60px 60px 0 60px;
+        }
+
+        h5 {
+            color: $Secondary-text-color;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+
+        .card-details {
+            color: $Secondary-text-color;
+
+            li {
+                padding-bottom: 10px;
+            }
+        }
+
+        .card-btn {
+            a {
+                padding-bottom: 20px;
+            }
+
+            button {
+                background-color: #fff;
+                color: $black;
+                border: none;
+
+                &:hover {
+                    border: none;
+                    background-color: $Primary-text-color;
+                    color: $Secondary-text-color;
+                }
+            }
+        }
+    }
+
+    .card-1 {
+        background-color: #7B3F2C;
+    }
+
+    .card-2 {
+        background-color: #134181;
+    }
+
+    .card-3 {
+        background-color: #B47435;
+    }
+}
+
+//--------- why nuteko-----------
+.why {
+    // padding-top: 80px;
+    // background-color: $theam-white;
+    // background-image: url("../images/butter cream.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    h2 {
+        font-size: $Primary-text-size ;
+        margin-bottom: 60px;
+    }
+
+    p {
+        font-family: $Secondary-font;
+        // margin-left: 150px;
+        // margin-right: 150px;
+        // max-width: 800px;
+        line-height: 35px;
+        // padding: 0 20px;
+        margin-bottom: 120px;
+    }
+}
+
+//--------- Subscribe-------
+.Subscribe {
+    padding: 40px 0;
+    // background-image: url("../images/nuts cashew.png");
+    // background-color: #134181;
+    background-size: cover;
+    // text-align: center;
+
+    h3 {
+        color: $Primary-text-color;
+        font-size: 35px !important;
+        padding-bottom: 10px;
+    }
+
+    p {
+        color: $Primary-text-color;
+    }
+
+    .sub-sec {
+        transition: 0.5s;
+
+        input {
+            margin-right: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 30px;
+        }
+
+        button {
+            border-radius: 30px;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: #000;
+            transition: 0.5s;
+        }
+    }
+}
+
+// ---------footer--------
+.ftr {
+    padding-top: 80px;
+    background-image: url("../images/ftr-background-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-color: rgba($color: #7B3F2C, $alpha: 1);
+    list-style: none;
+    position: relative;
+
+    .brand-details {
+        padding: 15px;
+
+        h2 {
+            font-size: 35px;
+            font-family: $heading-font;
+            color: $Primary-text-color;
+            margin-bottom: 20px;
+
+            &:hover {
+                color: $Header-color;
+            }
+        }
+
+        li {
+            padding-bottom: 15px;
+
+            &:hover {
+                color: $Header-color;
+            }
+        }
+
+        a {
+            font-size: 16px;
+            color: $Primary-text-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $Header-color;
+            }
+
+            i {
+                margin: 20px;
+            }
+        }
+    }
+
+    // ---- footer nav menu -----
+    .ftr-nav {
+        padding: 15px;
+
+        .nav-details {
+            margin-top: 50px;
+            margin-left: 20px;
+
+            li {
+                display: block;
+
+                a {
+                    color: $Primary-text-color;
+
+                    &:hover {
+                        color: $Header-color;
+                    }
+                }
+            }
+        }
+    }
+
+    //----- social-----
+    .social {
+        .wrapper {
+            margin-top: 70px;
+        }
+
+        .button {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            background: #fff;
+            border: 1px solid $Primary-text-color;
+            // overflow: hidden;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            width: 150px;
+
+        }
+
+        .button span {
+            // font-size: 20px;
+            font-weight: 500;
+            // line-height: 60px;
+            // margin-left: 10px;
+        }
+
+        .button:nth-child(1):hover .icon {
+            background: #e1306c;
+        }
+
+        .button:nth-child(2):hover .icon {
+            background: #4267b2;
+        }
+
+        .button:nth-child(3):hover .icon {
+            background: #1da1f2;
+        }
+
+        .button:nth-child(4):hover .icon {
+            background: rgb(255, 3, 3);
+        }
+
+
+        .button:nth-child(1) span {
+            color: #e1306c;
+        }
+
+        .button:nth-child(2) span {
+            color: #4267b2;
+        }
+
+        .button:nth-child(3) span {
+            color: #1da1f2;
+        }
+
+        .button:nth-child(4) span {
+            color: #333;
+        }
+
+        .button .icon {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50px;
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button .icon i {
+            font-size: 25px;
+            line-height: 60px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button:hover i {
+            color: #fff;
+        }
+
+    }
+
+    //-------- message----
+    .brand-details .svg-inline--fa {
+        padding-right: 10px;
+    }
+
+    .ftr-message {
+        h4 {
+            color: $Primary-text-color;
+        }
+
+        button {
+            border: none;
+
+            &:hover {
+                background-color: #fff;
+                color: #000;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    //---- whatsapp icon-----
+    .wtsup {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #25D366;
+        font-size: 35px;
+        border-radius: 30px;
+        align-items: center;
+        position: absolute;
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+
+        a {
+            color: #fff;
+        }
+
+        &:hover {
+            .whatsapp-qr {
+                visibility: visible;
+            }
+        }
+
+    }
+
+    .whatsapp-qr {
+        width: 110px;
+        height: 110px;
+        position: absolute;
+        bottom: 45px;
+        right: 33px;
+        border-radius: 10px 10px 0px 10px;
+        visibility: hidden;
+    }
+}
+
+.divider {
+    border: 0.5px solid $theam-white;
+    opacity: 0.5;
+}
+
+.low-footer-details {
+
+    p,
+    a {
+        color: $Secondary-text-color;
+
+        a:hover {
+            color: $Primary-text-color;
+        }
+    }
+
+}
+
+//----policy-------
+.policy {
+    a {
+        color: rgb(143, 139, 139) !important;
+        text-decoration: none !important;
+    }
+}
+
+// ------privacy policy page------
+.terms {
+    padding: 140px 0px 80px;
+
+    h1 {
+        font-family: $Primary-font;
+    }
+
+    p {
+        font-size: $Secondary-text-size;
+        font-weight: 500;
+    }
+
+    li {
+        margin-left: 20px;
+    }
+}
+
+//-------- products page----------
+.product-banner {
+    background-image: url("../images/banner-5.jpg");
+    background-size: cover;
+    background-position: 0% 54%;
+    height: 400px;
+    padding: 80px 0;
+
+    h2 {
+        color: $Secondary-text-color;
+        font-size: 80px !important;
+    }
+}
+
+//------- products section----
+.products {
+
+    .product-card {
+        padding: 50px;
+        margin: 40px 0;
+        max-width: 1320px;
+    }
+
+    .best-seller {
+        background-color: #fff;
+    }
+
+    .img-sec {
+        border-right: 2px dashed rgb(220, 219, 219);
+    }
+
+    img {
+        width: 300px;
+    }
+
+    .products-weight {
+        color: $Secondary-text-color;
+    }
+
+    .product-details {
+        color: $Secondary-text-color;
+
+        li {
+            list-style: none;
+            line-height: 30px;
+        }
+
+        .btn-outline {
+            padding: 10px 20px !important;
+            border: none;
+            background-color: rgb(255, 68, 68);
+            color: #fff;
+
+            &:hover {
+                background-color: $Theam-color;
+                color: #000;
+            }
+        }
+    }
+
+    .product-icon {
+        img {
+            width: 50px !important;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    .product-1,
+    .product-3 {
+        background-color: #7B3F2C;
+        border-radius: 20px 0 0 20px;
+        margin-left: auto;
+    }
+
+    .product-2 {
+        background-color: #134181;
+        border-radius: 0 20px 20px 0;
+        left: 0;
+    }
+
+    .product-3 {
+        background-color: #B47435;
+    }
+}
+
+//------ service------
+.service {
+    padding: 80px 0;
+
+    // background-color: $theam-white;
+    h2 {
+        color: $Primary-text-color;
+    }
+
+    .company-logo {
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+
+        .company-img img {
+            width: 150px;
+            transition: 0.5s;
+            padding: 30px 0px;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+
+//---- recipes------
+.recipes {
+    .product-banner {
+        background-image: url("../images/rec-banner.jpg");
+        background-size: cover;
+        background-position: 50% 21%;
+    }
+}
+
+.rec-card {
+    padding: 80px 0;
+
+    .rec-card-1 {
+        margin-top: 50px;
+        border: 3px solid $Header-color;
+        border-radius: 10px;
+    }
+
+    .rec-img {
+        top: -20px;
+        left: 25px;
+
+        img {
+            width: 350px;
+            border-radius: 10px;
+            margin-top: -75px;
+            margin-left: 30px;
+            box-shadow: -1px 0px 18px 4px #988d7f;
+        }
+    }
+
+    .Smoothie-Recipe {
+        max-width: 850px;
+    }
+
+    .rec-card-2 {
+        margin-top: 120px !important;
+
+        .rec-img-2 {
+            top: -70px !important;
+
+        }
+    }
+
+    .Cookies-Recipe {
+        li {
+            line-height: 25px;
+        }
+    }
+
+    .rec-card-3 {
+        margin-top: 150px;
+    }
+}
+
+
+
+//-------- about page------------
+.aboutus {
+    background-image: url("../images/about-banner.jpg");
+}
+
+.about-pg {
+    padding: 80px 0;
+
+    img {
+        align-items: center;
+        // width: 450px;
+        border-radius: 15px;
+        background-size: contain;
+        box-shadow: -1px 1px 20px 11px #96a0b9;
+    }
+
+    .heading {
+        padding-top: 0px;
+    }
+
+    .about-us-list p {
+        padding-top: 20px;
+        line-height: 30px;
+        color: $Primary-text-color;
+    }
+
+}
+
+//------- faq page---------
+.faq {
+    background-image: url("../images/faq.banner.jpg");
+    background-size: cover;
+}
+
+.faq-details {
+    padding: 30px 0;
+    background-image: url("../images/nuts\ cashew.png");
+    background-attachment: fixed;
+    backdrop-filter: brightness(0.9);
+    background-size: cover;
+
+    .accordion-item {
+        background-color: $Theam-color  !important;
+        border-radius: 0px 25px 0px 25px;
+        border: none;
+
+        h2 button {
+            // font-family: $Primary-font;
+            font-size: 20px;
+            color: rgb(255, 255, 255) !important;
+            font-weight: 400;
+
+        }
+
+        .accordion-button {
+            background-color: #3e3e3e !important;
+            padding: 25px;
+            border-radius: 0px 25px 0px 25px;
+            margin: 20px 20px 20px 0px;
+        }
+    }
+}
+
+#headingeight {
+    border-radius: 0px 25px 0px 25px;
+}
+
+
+//------- contact us page-----------
+.contact {
+
+    background-image: url("../images/contact us.jpg");
+}
+
+.banner {
+    background-size: cover;
+    color: $Secondary-text-color;
+    background-position: 50% 50%;
+}
+
+.banner-details a {
+    color: var(--white) !important;
+}
+
+.banner-details {
+    text-align: center;
+    font-size: 14px;
+    padding: 80px 0;
+}
+
+.banner-details h2,
+.product-banner h2,
+.cart-banner h2,
+.login-banner h2 {
+    font-size: 54px;
+    font-weight: 700;
+    font-family: $heading-font;
+    text-align: center;
+    align-items: center;
+    padding-top: 80px;
+    margin-bottom: 15px;
+}
+
+.banner-details p {
+    color: red;
+    display: inline;
+}
+
+
+//------ contact-info----
+.contact-info {
+    padding: 80px 0;
+    border: none;
+
+    .contact-card {
+        height: 230px;
+        width: 375px;
+        border: 1px solid rgba(92, 14, 14, 0);
+        border-radius: 10px;
+        padding: 50px 30px 30px;
+        background-color: #fff;
+        box-shadow: 1px 1px 20px 0px;
+        position: relative;
+        margin: 50px 20px;
+
+        &:hover {
+            .card-icon {
+                background-color: $Header-color;
+                color: #fff;
+            }
+        }
+
+        .card-icon {
+            font-size: 30px;
+            padding: 20px 27px;
+            border: 2px solid #fff;
+            background-color: #fff;
+            box-shadow: 1px 1px 20px 0px;
+            border-radius: 50%;
+            display: initial;
+            position: absolute;
+            top: -50px;
+            left: 30px;
+            transition: 0.5s;
+        }
+
+        a {
+            color: black !important;
+        }
+    }
+}
+
+// -----client form-------
+.form {
+    padding: 80px 0;
+}
+
+.form-details {
+    padding-right: 50px;
+}
+
+.form-details h2,
+.about-pg .heading h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.form-img {
+    img {
+        // margin: 0 30px;
+        border-radius: 5px;
+    }
+}
+
+.iframe {
+    width: 100%;
+}
+
+//--- nav-map----
+.nav-map iframe {
+    height: 600px;
+}
+
+//----- cart page-------
+//-- cart banner---
+.cart-banner,
+.login-banner {
+    background-image: url("../images/cart-banner.jpg");
+    background-size: cover;
+    background-position: 0% 62%;
+    height: 350px;
+    padding: 80px 0;
+
+    h2 {
+        color: $Primary-text-color;
+    }
+}
+
+// --- login page ---
+// --login banner---
+.login-banner {
+    background-position: 0% 35% !important;
+    background-image: url("../images/login-banner.jpg");
+
+    h2 {
+        color: $Secondary-text-color  !important;
+    }
+}
+
+.login-form {
+    padding: 80px 0;
+
+    .col-6 {
+        padding: 50px;
+        box-shadow: 2px 2px 10px #ffa0a0 !important;
+        border-radius: 10px;
+    }
+
+    .btn-outline:hover {
+        background-color: $Background-color;
+        color: $Secondary-text-color;
+    }
+
+    .forgot {
+        a {
+            color: $Primary-text-color;
+        }
+    }
+}
+
+//---- signup page-----
+.signup {
+    padding: 80px 0;
+
+    .col-6 {
+        padding: 50px;
+        box-shadow: 2px 2px 10px #ffa0a0 !important;
+        border-radius: 10px;
+    }
+}
+
